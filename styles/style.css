@@ -9,9 +9,43 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #000;
-    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-/* Add your css  */
+.calculator {
+    width: 250px;
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+}
+
+.operator {
+    background: #f36;
+    color: #fff;
+}
